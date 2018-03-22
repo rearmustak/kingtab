@@ -1,7 +1,44 @@
-body{
-	padding: 100px;
-	background-color: whitesmoke;
-	font-family: arial;
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+a,
+button:hover,
+button:focus {
+	outline: none;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 12px;
 }
 
 .tab-widget{
@@ -14,4 +51,32 @@ body{
 }
 .panels .active{
 	display: block;
+}
+
+.panels {
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+
+.tabs button {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.tabs button:hover {
+	color: #888;
+}
+
+.tabs button.active {
+	color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid orange;
+    border-bottom: 1px solid #fff;
 }
