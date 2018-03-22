@@ -1,0 +1,17 @@
+body{
+	padding: 100px;
+	background-color: whitesmoke;
+	font-family: arial;
+}
+
+.tab-widget{
+	background-color: #FFF;
+	padding: 15px;
+}
+
+.panels div{
+	display: none;
+}
+.panels .active{
+	display: block;
+}
